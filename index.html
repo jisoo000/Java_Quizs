@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>객체 지향 프로그래밍 시험</title>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="./style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.css" />
+   <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <center>
+      <h1>객체 지향 프로그래밍 시험</h1>
+   </center>
+   <form id="quiz-form">
+      <ol>
+         <!--1 번문제 -->
+         <li>
+            <h2>1.다음 코드에서 Car 클래스의 생성자를 작성하세요.</h2>
+            <pre><code class="language-java">public class Car {
+               public class Car {
+                  private String model;
+                  private String color;
+               
+                  //나머지코드
+               }
+            }</code></pre>
+            <div class="code-input">
+               <div class="code-input">
+                  <label for="q1" class="code-label">답안작성</label>
+                  <textarea name="q1" id="q2" class="code-textarea" rows="4" cols="50"></textarea>
+               </div>
+         </li>
+
+         <!--2번문제-->
+         <li>
+            <h2>2.다음 코드에서 Truck 클래스가 1번 문제의 Car 클래스를 상속받도록 수정, 작성하세요.</h2>
+            <pre><code class="language-java">public class Car {
+               public class Truck Car {
+                  private int loadCapacity;
+               
+                  //나머지 코드 
+               }
+               
+         }</code></pre>
+
+            <div class="code-input">
+               <div class="code-input">
+                  <label for="q2" class="code-label">답안작성</label>
+                  <textarea name="q2" id="q2" class="code-textarea" rows="4" cols="50"></textarea>
+               </div>
+         </li>
+
+         <!-- 3번문제 -->
+         <li>
+            <h2>3.다음 코드에서 추상 클래스 Animal을 작성하세요.</h2>
+            <pre><code class="language-java">public class Animal {
+               private String name;
+            
+               public Animal(String name) {
+                  this.name = name;
+               }
+            
+               public void makeSound();
+            
+            }
+            
+         </code></pre>
+            <div>
+               <label for="q3" class="code-label">답안작성</label>
+               <textarea id="q3" name="q3" class="code-textarea"rows="4" cols="50"></textarea>
+            </div>
+         </li>
+
+         <!-- 4번문제 -->
+         <li>
+            <h2>4.다음 코드에서 Dog 클래스가 Animal 클래스를 상속받도록 수정, 작성하세요.</h2>
+            <pre><code class="language-java">public class Dog {
+               public Dog(String name) {
+                  super(name);
+               }
+            
+               //나머지코드
+            
+            }
+            </code></pre>
+            <div>
+               <label for="q4" class="code-label">답안작성</label>
+               <textarea id="q4" name="q4" class="code-textarea"rows="4" cols="50"></textarea>
+            </div>
+         </li>
+         
+
+
+         <!-- 5번문제 -->
+         <li>
+            <h2>5.다음 코드에서 인터페이스 Printable을 작성하세요.</h2>
+            <pre><code class="language-java">public Printable {
+               void print();
+            }
+         </code></pre>
+            <div>
+               <label for="q5" class="code-label">답안작성</label>
+               <textarea id="q5" name="q5" class="code-textarea"rows="4" cols="50"></textarea>
+            </div>
+         </li>
+         
+
+         <!-- 6번문제 -->
+         <li>
+            <h2>6. 다음 코드에서 Printer 클래스가 Printable 인터페이스를 구현하도록 수정하세요.</h2>
+            <pre><code class="language-java">
+               
+               public class Printer {
+               private String text;
+            
+               public Printer(String text) {
+                  this.text = text;
+               }
+            
+               @Override
+               public void print() {
+                  System.out.println(text);
+               }
+            
+            }
+            </code></pre>
+            <div class="code-input">
+               <label for="q6" class="code-label">답안작성</label>
+               <textarea name="q6" id="q6" class="code-textarea" rows="4" cols="50"></textarea>
+            </div>
+         </li>
+
+         <!-- 7번문제 -->
+         <li>
+            <h2>7.다음 코드에서 Employee 클래스를 작성하세요.</h2>
+            <pre><code class="language-java">public class Employee {
+               private String name;
+               private int salary;
+            
+               public Employee(String name, int salary) {
+                  //나머지 코드
+               }
+            }
+            </code></pre>
+            <div>
+               <label for="q7" class="code-label">답안작성</label>
+               <textarea id="q7" name="q7" class="code-textarea" rows="4" cols="50"></textarea>
+            </div>
+          </li>
+
+         <!-- 8번문제 -->
+         <li>
+            <h2>8. 다음 코드에서 Company 클래스에서 Employee 객체를 저장하는 ArrayList를 만드세요.</h2>
+            <pre><code class="language-java">import java.util.ArrayList;
+
+               public class Company {
+                  private ArrayList<Employee> employees;
+               
+                  //나머지 코드
+               
+               }
+               </code></pre>
+            <div>
+               <label for="q8" class="code-label">답안작성</label>
+               <textarea id="q8" name="q8" class="code-textarea" rows="4" cols="50"></textarea>
+            </div>
+         </li>
+
+         <!-- 9번 문제 -->
+         <li>
+            <h2>9.다음 코드에서 Singleton 패턴을 사용하는 Logger 클래스를 작성하세요.</h2>
+            <pre><code class="language-java">public class Logger {
+               private static Logger instance;
+            
+               private Logger() {}
+            
+               //나머지코드
+            
+               public void log(String message) {
+                  System.out.println(message);
+               }
+            }</code></pre>
+            <div>
+              <label for="q9" class="code-label">답안작성</label>
+              <textarea id="q9" name="q9" class="code-textarea" rows="4" cols="50"></textarea>
+            </div>
+          </li>
+
+         <!-- 10번 문제 -->
+         <li>
+            <h2>10. 다음 코드에서 main 메서드를 사용하여 Employee 객체를 생성하고 Company 객체에 추가하는 코드를 작성하세요.</h2>
+            <pre><code class="language-java">public class Main {
+               public static void main(String[] args) {
+                  Employee employee1 = new Employee("John", 30);
+                  Employee employee2 = new Employee("Jane", 25);
+            
+                  //나머지 코드
+               }
+            }
+            </code></pre>
+            <div>
+              <label for="q10" class="code-label">답안작성</label>
+              <textarea id="q10" name="q10" class="code-textarea" rows="4" cols="50"></textarea>
+            </div>
+          </li>
+      </ol>
+      <input type="submit" value="제출....하지마세요 채점 아직 구현못함 ㅠㅠ">
+   </form>
+   <div id="results"></div>
+   <script src="./script.js"></script>
+   <a href="https://swift-green-518.notion.site/2023-04-26-JAVA-b1596e54db724974ac3a621fbc666410"> 정답 보기 </a>
+   <div>
+    </div>
+</body>
+</html>
